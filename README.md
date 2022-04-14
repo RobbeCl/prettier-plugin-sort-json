@@ -67,3 +67,7 @@ Sort JSON objects recursively, including all nested objects.
 | Default | CLI Override            | API Override                |
 | ------- | ----------------------- | --------------------------- |
 | `false` | `--json-recursive-sort` | `jsonRecursiveSort: <bool>` |
+
+# Remarks:
+
+This code is official from https://github.com/Gudahtt/prettier-plugin-sort-json with a pull request from https://github.com/MasterEric/prettier-plugin-sort-json which was never approved. So I created this custom project which is published to npm to people can actually use it.
