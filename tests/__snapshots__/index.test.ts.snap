@@ -1,90 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sort JSON should sort a JSON object with a custom key sorting algorithm 1`] = `
-"{
-  \\"0\\": null,
-  \\"k\\": null,
-  \\"z\\": null,
-  \\"exampleNestedObject\\": {
-    \\"z\\": null,
-    \\"a\\": null,
-    \\"anotherObject\\": {
-      \\"yetAnother\\": {
-        \\"andAnother\\": {
-          \\"z\\": null,
-          \\"b\\": null,
-          \\"a\\": null
-        }
-      },
-      \\"exampleArray\\": [\\"z\\", \\"b\\", \\"a\\"],
-      \\"examplePrimitive\\": 1
-    }
-  },
-  \\"b\\": null,
-  \\"a\\": null
-}
-"
-`;
-
-exports[`Sort JSON should sort a JSON object with another custom key sorting algorithm 1`] = `
-"{
-  \\"f\\": null,
-  \\"o\\": null,
-  \\"u\\": null,
-  \\"b\\": null,
-  \\"a\\": null,
-  \\"r\\": null,
-  \\"exampleNestedObject\\": {
-    \\"z\\": null,
-    \\"a\\": null,
-    \\"anotherObject\\": {
-      \\"yetAnother\\": {
-        \\"andAnother\\": {
-          \\"z\\": null,
-          \\"b\\": null,
-          \\"a\\": null
-        }
-      },
-      \\"exampleArray\\": [\\"z\\", \\"b\\", \\"a\\"],
-      \\"examplePrimitive\\": 1
-    }
-  },
-  \\"k\\": null,
-  \\"z\\": null
-}
-"
-`;
-
 exports[`Sort JSON should sort a JSON object with unconventional keys 1`] = `
 "{
   \\"\\": null,
-  \\"\\\\u0000\\": null,
   \\"\\\\b\\": null,
+  \\"\\\\u0000\\": null,
   \\"\\\\t\\": null,
   \\"\\\\n\\": null,
   \\"\\\\f\\": null,
   \\"\\\\r\\": null,
   \\" \\": null,
-  \\"\\\\\\"\\": null,
-  \\"'\\": null,
   \\"-10\\": null,
   \\"-10.1e10\\": null,
+  \\"'\\": null,
+  \\"\\\\\\"\\": null,
+  \\"[\\": null,
+  \\"[]\\": null,
+  \\"[1,2,3]\\": null,
+  \\"{\\": null,
+  \\"{}\\": null,
   \\"/\\": null,
-  \\"0X10\\": null,
+  \\"\\\\\\\\\\": null,
   \\"0x10\\": null,
+  \\"0X10\\": null,
   \\"10.101\\": null,
   \\"10.1e10\\": null,
-  \\"1E10\\": null,
   \\"1e10\\": null,
-  \\"[\\": null,
-  \\"[1,2,3]\\": null,
-  \\"[]\\": null,
-  \\"\\\\\\\\\\": null,
+  \\"1E10\\": null,
   \\"false\\": null,
   \\"null\\": null,
   \\"true\\": null,
-  \\"{\\": null,
-  \\"{}\\": null,
   \\"￿\\": null
 }
 "
@@ -122,24 +67,23 @@ exports[`Sort JSON should sort an unsorted JSON object recursively 1`] = `
 "
 `;
 
-exports[`Sort JSON should sort an unsorted JSON object within an array recursively 1`] = `
-"[
-  1,
-  4,
-  {
-    \\"0\\": null,
-    \\"a\\": null,
-    \\"b\\": null,
-    \\"exampleNestedObject\\": {
-      \\"a\\": null,
-      \\"exampleArray\\": [\\"z\\", \\"b\\", \\"a\\"],
-      \\"examplePrimitive\\": 1,
-      \\"z\\": null
-    },
-    \\"z\\": null
-  },
-  2
-]
+exports[`Sort JSON should sort an unsorted JSON with caseSensitive object recursively 1`] = `
+"{
+  \\"a\\": null,
+  \\"b\\": null,
+  \\"vat\\": null,
+  \\"VAT\\": null
+}
+"
+`;
+
+exports[`Sort JSON should sort an unsorted JSON with caseSensitive object recursively 2`] = `
+"{
+  \\"a\\": null,
+  \\"A\\": null,
+  \\"b\\": null,
+  \\"B\\": null
+}
 "
 `;
 
@@ -235,48 +179,27 @@ exports[`Sort JSON should validate a sorted JSON object with unconventional keys
   \\"\\\\f\\": null,
   \\"\\\\r\\": null,
   \\" \\": null,
-  \\"\\\\\\"\\": null,
-  \\"'\\": null,
   \\"-10\\": null,
   \\"-10.1e10\\": null,
+  \\"'\\": null,
+  \\"\\\\\\"\\": null,
+  \\"[\\": null,
+  \\"[]\\": null,
+  \\"[1,2,3]\\": null,
+  \\"{\\": null,
+  \\"{}\\": null,
   \\"/\\": null,
-  \\"0X10\\": null,
+  \\"\\\\\\\\\\": null,
   \\"0x10\\": null,
+  \\"0X10\\": null,
   \\"10.101\\": null,
   \\"10.1e10\\": null,
-  \\"1E10\\": null,
   \\"1e10\\": null,
-  \\"[\\": null,
-  \\"[1,2,3]\\": null,
-  \\"[]\\": null,
-  \\"\\\\\\\\\\": null,
+  \\"1E10\\": null,
   \\"false\\": null,
   \\"null\\": null,
   \\"true\\": null,
-  \\"{\\": null,
-  \\"{}\\": null,
   \\"￿\\": null
 }
-"
-`;
-
-exports[`Sort JSON should validate a sorted JSON object within an array recursively 1`] = `
-"[
-  1,
-  4,
-  {
-    \\"0\\": null,
-    \\"a\\": null,
-    \\"b\\": null,
-    \\"exampleNestedObject\\": {
-      \\"a\\": null,
-      \\"exampleArray\\": [\\"z\\", \\"b\\", \\"a\\"],
-      \\"examplePrimitive\\": 1,
-      \\"z\\": null
-    },
-    \\"z\\": null
-  },
-  2
-]
 "
 `;

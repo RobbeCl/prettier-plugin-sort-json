@@ -11,13 +11,13 @@ This module requires an [LTS](https://github.com/nodejs/Release) Node version (v
 Using `npm`:
 
 ```console
-npm install --save-dev prettier-plugin-sort-json
+npm install --save-dev prettier-plugin-sort-json-custom
 ```
 
 Using `yarn`:
 
 ```console
-yarn add --dev prettier-plugin-sort-json
+yarn add --dev prettier-plugin-sort-json-custom
 ```
 
 ## Description
